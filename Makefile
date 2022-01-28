@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
+#    Updated: 2022/01/28 16:52:17 by rmount           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME	= libft.a
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
@@ -17,8 +29,11 @@ SRC_MEMORY =
 
 SRC_PRINT = 
 
-SRC_STR = ft_strlen.c \
-		  ft_toupper.c
+SRC_STR = ft_strjoin.c \
+		  ft_strlen.c \
+		  ft_substr.c \
+		  ft_tolower.c \
+		  ft_toupper.c 
 
 SRCS = $(SRC_CHAR) \
 	   $(SRC_CONVERSION) \
