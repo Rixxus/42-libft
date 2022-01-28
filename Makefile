@@ -17,7 +17,8 @@ SRC_MEMORY =
 
 SRC_PRINT = 
 
-SRC_STR = ft_strlen.c
+SRC_STR = ft_strlen.c \
+		  ft_toupper.c
 
 SRCS = $(SRC_CHAR) \
 	   $(SRC_CONVERSION) \

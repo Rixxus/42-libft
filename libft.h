@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/01/27 15:36:25 by rmount           ###   ########.fr       */
+/*   Updated: 2022/01/28 13:45:54 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ int	ft_isdigit(int c);
 
 /* STRING FUNCS */
 size_t	ft_strlen(const char *s);
+char	ft_toupper(int c);
 
 #endif
