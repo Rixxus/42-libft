@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/01/28 16:52:17 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/01 14:29:53 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ SRC_PRINT =
 
 SRC_STR = ft_strjoin.c \
 		  ft_strlen.c \
+		  ft_strtrim.c \
 		  ft_substr.c \
 		  ft_tolower.c \
 		  ft_toupper.c 
