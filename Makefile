@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/02 11:36:58 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/02 12:18:32 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,8 @@ SRC_MEMORY = ft_bzero.c \
 
 SRC_PRINT = 
 
-SRC_STR = ft_strjoin.c \
+SRC_STR = ft_strchr.c \
+		  ft_strjoin.c \
 		  ft_strlcat.c \
 		  ft_strlcpy.c \
 		  ft_strlen.c \

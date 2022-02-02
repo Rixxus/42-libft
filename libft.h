@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/02 11:38:09 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/02 12:17:04 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*ft_memset(void *b, int c, size_t len);
 
 
 /* STRING FUNCS */
+char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
