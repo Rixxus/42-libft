@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/01 14:29:53 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/02 11:36:58 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,15 +21,21 @@ CFLAGS	= -Wall -Wextra -Werror
 SRC_CHAR = ft_isalnum.c \
 		   ft_isalpha.c \
 		   ft_isascii.c \
-		   ft_isdigit.c
+		   ft_isdigit.c \
+		   ft_isprint.c
 
 SRC_CONVERSION = 
 
-SRC_MEMORY = 
+SRC_MEMORY = ft_bzero.c \
+			 ft_memcpy.c \
+			 ft_memmove.c \
+			 ft_memset.c 
 
 SRC_PRINT = 
 
 SRC_STR = ft_strjoin.c \
+		  ft_strlcat.c \
+		  ft_strlcpy.c \
 		  ft_strlen.c \
 		  ft_strtrim.c \
 		  ft_substr.c \
