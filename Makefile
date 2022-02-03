@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/02 12:18:32 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/03 11:09:54 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,8 @@ SRC_CHAR = ft_isalnum.c \
 SRC_CONVERSION = 
 
 SRC_MEMORY = ft_bzero.c \
+			 ft_memchr.c \
+			 ft_memcmp.c \
 			 ft_memcpy.c \
 			 ft_memmove.c \
 			 ft_memset.c 
@@ -38,6 +40,7 @@ SRC_STR = ft_strchr.c \
 		  ft_strlcat.c \
 		  ft_strlcpy.c \
 		  ft_strlen.c \
+		  ft_strrchr.c \
 		  ft_strtrim.c \
 		  ft_substr.c \
 		  ft_tolower.c \
