@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/08 15:23:51 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/10 14:31:58 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_isprint(int c);
 
 /* CONVERSION FUNCS */
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 
 /* LIST FUNCS */
 

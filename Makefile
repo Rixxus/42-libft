@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/08 15:22:50 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/10 14:31:08 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ SRC_CHAR = ft_isalnum.c \
 		   ft_isdigit.c \
 		   ft_isprint.c
 
-SRC_CONVERSION = ft_atoi.c 
+SRC_CONVERSION = ft_atoi.c \
+				 ft_itoa.c 
 
 SRC_MEMORY = ft_bzero.c \
 			 ft_calloc.c \
