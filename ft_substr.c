@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:24:35 by rmount            #+#    #+#             */
-/*   Updated: 2022/01/28 15:29:12 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/10 10:02:15 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		return (NULL);
 	}
-	while (i < len && s[start + i])
+	while (i < len)
 	{
 		result[i] = s[start + i];
 		i++;
