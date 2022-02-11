@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/28 15:24:35 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/10 10:02:15 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/11 13:23:21 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	i;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	result = (char *)malloc(sizeof(char) * len + 1);
 	if (result == NULL)
 	{
