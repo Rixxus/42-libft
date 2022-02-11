@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/10 14:31:58 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/11 15:28:45 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include<stdlib.h>
 # include<unistd.h>
 
-/* CHARACTER FUNCS */
+/* CHARACTER FUNCS*/
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -41,15 +41,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 
 /* PRINT FUNCS */
-
+void	ft_putchar_fd(char c,  int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 /* STRING FUNCS */
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
+void	ft_striteri(char *s, void (*f)(unsigned itn, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
