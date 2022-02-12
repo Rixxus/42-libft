@@ -22,7 +22,10 @@ SRC_CHAR = ft_isalnum.c \
 		   ft_isalpha.c \
 		   ft_isascii.c \
 		   ft_isdigit.c \
-		   ft_isprint.c
+		ft_islower.c \
+		   ft_isprint.c \
+		ft_isspace.c \
+		ft_isupper.c
 
 SRC_CONVERSION = ft_atoi.c \
 				 ft_itoa.c 
@@ -41,6 +44,7 @@ SRC_PRINT = ft_putchar_fd.c \
 			ft_putstr_fd.c	
 
 SRC_STR = ft_strchr.c \
+	ft_strdlen.c \
 		  ft_strdup.c \
 		  ft_striteri.c \
 		  ft_strjoin.c \
