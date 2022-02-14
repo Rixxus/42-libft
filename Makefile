@@ -6,13 +6,14 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/14 11:12:50 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/15 09:20:05 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libft.a
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror
+RM		= rm -f
 
 #---------------#
 #    SOURCES    #
@@ -53,7 +54,6 @@ SRC_STR = ft_strchr.c \
 		  ft_strlen.c \
 		  ft_strmapi.c \
 		  ft_strncmp.c \
-		  ft_strjoin.c \
 		  ft_strnstr.c \
 		  ft_strrchr.c \
 		  ft_strtrim.c \
@@ -96,10 +96,10 @@ bonus:
 	ranlib $(NAME)
 
 clean:
-	-rm $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	-rm $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
