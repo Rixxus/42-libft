@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 13:45:26 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/01 15:30:40 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/15 09:22:55 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!(s1 && set))
 		return (NULL);
 	front = 0;
-	back = ft_strlen(s1);
-	i = 0;
 	while (s1[front] && match(s1[front], set))
 		front++;
+	back = ft_strlen(s1);
 	while (back > front && match(s1[back - 1], set))
 		back--;
-	result = malloc((back - front + 1) * sizeof(char));
+	result = malloc((back - front + 1) * sizeof(*result));
 	if (!result)
 		return (NULL);
+	i = 0;
 	while (front < back)
 		result[i++] = s1[front++];
 	result[i] = '\0';
-	return (result);
+	return (&result[0]);
 }
