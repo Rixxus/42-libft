@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 11:23:57 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/11 13:48:28 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/15 09:36:12 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*str;
 
 	i = 0;
+	if (!s)
+	{
+		return (NULL);
+	}
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
 	if (str == NULL)
 		return (NULL);

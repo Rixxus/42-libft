@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 13:45:26 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/15 09:22:55 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/15 09:54:52 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		i;
 	char	*result;
 
-	if (!(s1 && set))
-		return (NULL);
+	if (!(s1 || set))
+		return ((char *)s1);
 	front = 0;
 	while (s1[front] && match(s1[front], set))
 		front++;

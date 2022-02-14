@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 08:24:05 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/02 09:34:35 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/15 09:46:22 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	int	i;
 
-	if (dst == src)
-		return (dst);
-	if (!src)
-		return (NULL);
 	if (dst > src)
 	{
 		i = (int)len - 1;
