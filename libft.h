@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/11 15:28:45 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/14 12:03:47 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,25 @@
 # include<stdlib.h>
 # include<unistd.h>
 
-/* CHARACTER FUNCS*/
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_islower(int c);
-int	ft_isprint(int c);
-int	ft_isspace(int c);
-int	ft_isupper(int c);
+/* CHARACTER FUNCS*/
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_islower(int c);
+int		ft_isprint(int c);
+int		ft_isspace(int c);
+int		ft_isupper(int c);
 
 
 /* CONVERSION FUNCS */
-int	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 
 /* LIST FUNCS */
@@ -38,7 +43,7 @@ char	*ft_itoa(int n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
@@ -59,7 +64,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
