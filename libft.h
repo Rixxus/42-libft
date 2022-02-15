@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/15 09:06:38 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/15 14:56:03 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,11 @@ int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 
 /* LIST FUNCS */
-
+void	ft_lstadd_back(t_list **list, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
 
 /* MEMORY FUNCS */
 void	ft_bzero(void *s, size_t n);
