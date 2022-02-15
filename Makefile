@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/15 15:47:57 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/16 10:25:48 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,8 @@ SRC_PRINT = ft_putchar_fd.c \
 			ft_putnbr_fd.c \
 			ft_putstr_fd.c	
 
-SRC_STR = ft_strchr.c \
+SRC_STR = ft_split.c \
+		  ft_strchr.c \
 		  ft_strdlen.c \
 		  ft_strdup.c \
 		  ft_striteri.c \
@@ -77,7 +78,9 @@ BONUS_SRC_LIST = ft_lstadd_back.c \
 				 ft_lstadd_front.c \
 				 ft_lstclear.c \
 				 ft_lstdelone.c \
+				 ft_lstiter.c \
 				 ft_lstlast.c \
+				 ft_lstmap.c \
 				 ft_lstnew.c \
 				 ft_lstsize.c 
 
