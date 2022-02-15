@@ -6,7 +6,7 @@
 #    By: rmount <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/28 14:49:46 by rmount            #+#    #+#              #
-#    Updated: 2022/02/15 14:55:12 by rmount           ###   ########.fr        #
+#    Updated: 2022/02/15 15:47:57 by rmount           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,8 @@ OBJS = $(SRCS:.c=.o)
 
 BONUS_SRC_LIST = ft_lstadd_back.c \
 				 ft_lstadd_front.c \
+				 ft_lstclear.c \
+				 ft_lstdelone.c \
 				 ft_lstlast.c \
 				 ft_lstnew.c \
 				 ft_lstsize.c 
