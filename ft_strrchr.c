@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 08:32:29 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/03 09:38:52 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/18 14:13:31 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ char	*ft_strrchr(const char *s, int c)
 	last = -1;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (char) c)
 			last = i;
 		i++;
 	}
-	if ((last >= 0 && last <= (int)ft_strlen(s + 1)) && s[i] != c)
+	if ((last >= 0 && last <= (int)ft_strlen(s + 1)) && s[i] != (char) c)
 		return ((char *)&s[last]);
-	if (s[i] == c)
+	if (s[i] == (char) c)
 		return ((char *)&s[i]);
 	return (NULL);
 }

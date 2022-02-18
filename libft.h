@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 10:40:42 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/16 10:26:21 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/18 13:45:05 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
 int		ft_isupper(int c);
-
 
 /* CONVERSION FUNCS */
 int		ft_atoi(const char *str);
@@ -57,7 +56,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 
 /* PRINT FUNCS */
-void	ft_putchar_fd(char c,  int fd);
+void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);

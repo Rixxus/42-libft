@@ -6,7 +6,7 @@
 /*   By: rmount <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 11:12:31 by rmount            #+#    #+#             */
-/*   Updated: 2022/02/15 11:14:39 by rmount           ###   ########.fr       */
+/*   Updated: 2022/02/18 13:44:27 by rmount           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *node;
+	t_list	*node;
 
 	node = malloc(sizeof (*node));
 	if (!node)
